@@ -11,7 +11,7 @@ function onConvertBtnClicked() {
     }
     else {
         answer = (fahrenheit.value - 32) * 5/9;
-        result.innerHTML = (`${fahrenheit.value}° F  is ${answer}°  C.`);
+        result.innerHTML = (`${fahrenheit.value}° F  is ${(answer).toFixed(3)}°  C.`);
 
     }
     

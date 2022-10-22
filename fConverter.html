@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myfaren</title>
+</head>
+<body>
+    <div style="width: 800px;height: 300px; border: 3px solid red; padding-left: 50px; padding-top: 50px;" >
+        
+        <form>
+            <p>Farehnheit</p>
+            <input type="number" id="fahrenheit">
+
+            <p>Celsius</p>
+            <input type="number" id="celsius">
+
+            <button type="button" > convert </button>
+        </form>
+    </div>
+
+    <script>
+        function onConvertBtnClicked() {
+            let fInput = document.getElementById('fahrenheit').value;
+            let celsius = ((fInput - 32) * 5/9).toFixed(3);
+            document.getElementById('celsius').value = celsius;
+             
+
+
+        }
+        let convertBtn = document.querySelector('button');
+        convertBtn.addEventListener('click', onConvertBtnClicked)
+        
+
+
+    </script>
+    
+</body>
+</html>

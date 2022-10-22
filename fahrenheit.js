@@ -9,8 +9,8 @@ function onConvertBtnClicked() {
         result.innerHTML = ('Please put a number.');
     }
     else {
-        answer = (celsius.value *9/5) + 32;
-        result.innerHTML = (`${celsius.value}° C is ${answer}° F`);
+        answer = (celsius.value * 9/5) + 32;
+        result.innerHTML = (`${celsius.value}° C is ${(answer).toFixed(2) }° F`);
 
     }
 }
